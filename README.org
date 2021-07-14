@@ -1,0 +1,12 @@
+* Azure to Google Cloud Storage Transfer
+** Azure data source configuration
+3 variables are needed to identify and access the Azure Resource to transfer data from. Fill the =azure-config.template.json= and save it as =azure-config.json= with the information below.
+- =storage_account= :: Name of the [[https://docs.microsoft.com/en-us/azure/storage/common/storage-account-create?tabs=azure-portal#storage-account-endpoints][Azure Storage account]], which determines the Azure Endpoint from which data is accessible.
+- =container= :: [[https://docs.microsoft.com/en-us/rest/api/storageservices/naming-and-referencing-containers--blobs--and-metadata#resource-names][Container/blob]] to transfer from the Azure Storage account.
+- =sas_token= :: [[https://docs.microsoft.com/en-us/azure/storage/common/storage-sas-overview][Azure shared access signature]] for granting access to the resource in the storage account.
+** Google credentials 
+Create a [[https://cloud.google.com/iam/docs/creating-managing-service-account-keys][service account key]] and save it in json format under a file named =google-credentials.json=.
+** Requirements for Python script
+- Modern Python
+- [[https://github.com/googleapis/google-api-python-client][google-api-python-client]]
+
