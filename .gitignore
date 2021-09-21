@@ -131,3 +131,4 @@ dmypy.json
 # Private files
 google-credentials.json
 azure-config.json
+.idea/

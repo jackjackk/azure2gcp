@@ -1,5 +1,6 @@
 {
-    "storage_account": "...",
-    "container": "...",
-    "sas_token": "..."
+    "storage_account": "azureopendatastorage",
+    "container": "covid19temp",
+    "path": "document_parses/pdf_json/",
+    "sas_token": "?sv=2019-02-02&ss=bfqt&srt=sco&sp=rlcup&se=2025-04-14T00:21:16Z&st=2020-04-13T16:21:16Z&spr=https&sig=JgwLYbdGruHxRYTpr5dxfJqobKbhGap8WUtKFadcivQ%3D"
 }

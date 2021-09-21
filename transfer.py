@@ -22,8 +22,14 @@ trans_job = {
             'sasToken': azure_conf['sas_token']
             },
         'container': azure_conf['container'],
+        'path': azure_conf['path'],
+        },
+        'gcsDataSink': {
+            'bucketName': google_conf['bucket_sink']
         }
     }
 }
 
 result = store_trans.transferJobs().create(body=trans_job).execute()
+print('Returned transferJob: {}'.format(
+        json.dumps(result, indent=4)))
